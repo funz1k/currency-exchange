@@ -11,7 +11,7 @@ export const Button = styled.button`
   padding: 5px 10px;
   text-transform: capitalize;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
   transition: all 300ms ease;
