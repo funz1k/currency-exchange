@@ -9,6 +9,6 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   padding: 10px;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
 `;
