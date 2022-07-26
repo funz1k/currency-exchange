@@ -46,7 +46,7 @@ const App = () => {
       </Container>
 
       <Container title="Statistics">
-        {true ? (
+        {totalFeedback() ? (
           <Statistics
             good={goodFeedback}
             neutral={neutralFeedback}
