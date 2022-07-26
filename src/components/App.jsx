@@ -10,7 +10,7 @@ const App = () => {
   const [badFeedback, setBadFeedback] = useState(0);
   const [neutralFeedback, setNeutralFeedback] = useState(0);
 
-  const state = { goodFeedback, badFeedback, neutralFeedback };
+  const feedBack = { goodFeedback, badFeedback, neutralFeedback };
 
   const onBtnClick = evt => {
     const { name } = evt.currentTarget;
@@ -31,7 +31,7 @@ const App = () => {
   };
 
   const totalFeedback = () => {
-    return Object.values(state).reduce((acc, value) => acc + value, 0)
+    return Object.values(feedBack).reduce((acc, value) => acc + value, 0)
   };
 
   const percentagePositiveFeedback = () => {
