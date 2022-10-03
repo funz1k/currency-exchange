@@ -1,0 +1,28 @@
+.group{
+    background: rgb(91, 91, 133);
+    width: 180px;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: 100px 80px;
+    border-radius: 15px;
+}
+
+input{
+    background: none;
+    border:0;
+    outline: none;
+    color:#fff;
+    padding-left: 10px;
+}
+select{
+    background: none;
+    border:0;
+    outline: none;
+    color:#fff;
+    padding: 15px;
+}
+select option {
+    color: #111;
+}
+
+
