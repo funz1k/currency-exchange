@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import './App.css';
 import CurrencyInput from "../InputComponent";
 import Header from '../Header/Header';
