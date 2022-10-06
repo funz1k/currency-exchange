@@ -1,6 +1,15 @@
+import React from 'react';
 import './header.css'
 
-const Header = ({ currencies }) => {
+type ICurrency = {
+    [key: string]: number;
+}
+
+type Props = {
+    currencies: ICurrency,
+}
+
+const Header: React.FC<Props> = ({ currencies }) => {
 
     return (
         <ul className='header'>
@@ -8,7 +17,7 @@ const Header = ({ currencies }) => {
                 <div className='header-item-data'>USD : {(currencies.USD * currencies.UAH).toFixed(3)}</div>
             </li>
             <li className='header-item'>
-                <div className='header-item-data'>EUR : {(currencies.UAH / currencies.EUR).toFixed(3)}</div>
+                <div className='header-item-data'>EUR : {(currencies.EUR * currencies.UAH).toFixed(3)}</div>
             </li>
         </ul>
     )
